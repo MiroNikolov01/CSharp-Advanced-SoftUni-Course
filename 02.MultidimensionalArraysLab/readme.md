@@ -9,7 +9,7 @@ Welcome to the **Problem Collection**! In this collection, we will explore how t
 ### 📚 Multidimensional Arrays Lab
 Click the button below to download the problem description:
 
-[![Download Multidimensional Arrays Lab](https://img.shields.io/badge/Download-MultidimensionalArraysLab-blue?style=for-the-badge&logo=microsoftword)](https://github.com/user-attachments/files/18332737/Multidimensional-Arrays-Lab.docx)
+[![Download Multidimensional Arrays Lab](https://img.shields.io/badge/Download-MultidimensionalArraysLab-blue?style=for-the-badge&logo=microsoftword)](https://github.com/user-attachments/files/18337828/Multidimensional-Arrays-Lab.docx)
 
 ---
 
