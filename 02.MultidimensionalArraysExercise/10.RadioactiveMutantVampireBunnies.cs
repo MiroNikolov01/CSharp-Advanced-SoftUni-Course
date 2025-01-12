@@ -17,10 +17,10 @@ public class Program
 
         for (int row = 0; row < gameField.GetLength(0); row++)
         {
-            char[] elemetsRow = ReadCharArray();
+            char[] elementsRow = ReadCharArray();
             for (int col = 0; col < gameField.GetLength(1); col++)
             {
-                gameField[row, col] = elemetsRow[col];
+                gameField[row, col] = elementsRow[col];
                 if (gameField[row, col] == 'P')
                 {
                     playerRow = row; playerCol = col;
