@@ -1,4 +1,4 @@
-﻿namespace _10.RadioactiveMutantVampireBunnies;
+namespace _10.RadioactiveMutantVampireBunnies;
 
 public class Program
 {
@@ -56,20 +56,19 @@ public class Program
                 {
                     if (gameField[row, col] == 'B')
                     {
-                        bunnyCoordinates.Enqueue(new int[] { row, col });
+                        bunnyCoordinates.Enqueue([row, col]);
                     }
                 }
             }
-            int length = bunnyCoordinates.Count;
-            for (int queueIteration = 0; queueIteration < length; queueIteration++)
+            int queueCount = bunnyCoordinates.Count;
+            for (int queueIteration = 0; queueIteration < queueCount; queueIteration++)
             {
-                var pairBunnyCoordinates = bunnyCoordinates.Dequeue();
-                SpreadBunnyes(pairBunnyCoordinates[0], pairBunnyCoordinates[1], gameField);
+                int[] pairBunnyCoordinates = bunnyCoordinates.Dequeue();
+                SpreadBunnies(pairBunnyCoordinates[0], pairBunnyCoordinates[1], gameField);
             }
            
             if (!CanMovePlayer(playerRow, playerCol, gameField))
             {
-
                 PrintGameFieldRows(gameField);
                 Console.WriteLine($"won: {currentRow} {currentCol}");
                 return;
@@ -94,38 +93,36 @@ public class Program
             Console.WriteLine();
         }
     }
-    static char[,] SpreadBunnyes(int row, int col, char[,] gameField)
+    static char[,] SpreadBunnies(int row, int col, char[,] gameField)
     {
         //Up
-        if (CanSpreadBunnyes(row - 1, col, gameField))
+        if (CanSpreadBunnies(row - 1, col, gameField))
         {
             gameField[row - 1, col] = 'B';
-
         }
         //Down
-        if (CanSpreadBunnyes(row + 1, col, gameField))
+        if (CanSpreadBunnies(row + 1, col, gameField))
         {
-            
             gameField[row + 1, col] = 'B';
         }
         //Left
-        if (CanSpreadBunnyes(row, col - 1, gameField))
+        if (CanSpreadBunnies(row, col - 1, gameField))
         {
-           
             gameField[row, col - 1] = 'B';
         }
         //Right
-        if (CanSpreadBunnyes(row, col + 1, gameField))
+        if (CanSpreadBunnies(row, col + 1, gameField))
         {
             gameField[row, col + 1] = 'B';
         }
+
         return gameField;
     }
     static char[] ReadCharArray()
     {
         return Console.ReadLine().ToCharArray();
     }
-    static bool CanSpreadBunnyes(int row, int col, char[,] gameField)
+    static bool CanSpreadBunnies(int row, int col, char[,] gameField)
     {
         return row >= 0 && row < gameField.GetLength(0) &&
             col >= 0 && col < gameField.GetLength(1);
