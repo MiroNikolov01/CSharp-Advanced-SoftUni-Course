@@ -23,7 +23,6 @@ namespace WordCount
             using (StreamReader wordsReader = new StreamReader(wordsFilePath))
             {
                 //Reading words.txt
-                string wordLine = wordsReader.ReadLine();
                 string[] words = File.ReadAllLines(wordsFilePath)
                     .SelectMany(line => line.Split(' ',StringSplitOptions.RemoveEmptyEntries))
                     .ToArray();
