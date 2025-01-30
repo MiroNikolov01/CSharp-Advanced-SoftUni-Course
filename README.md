@@ -18,8 +18,6 @@ Here are the key topics explored in this module:
 ## 🗂️ Repository Structure  
 Each folder represents a specific topic or set of problems from the course. Inside, you’ll find:  
 - 🖥️ **Solutions**: My code implementations for the exercises.  
-- 📄 **Problem Statements**: Downloadable documents that describe the problems so you can try solving them yourself.  
-
 ---
 
 ## 🛠️ How to Use  
