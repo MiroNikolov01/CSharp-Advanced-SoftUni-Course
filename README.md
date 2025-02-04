@@ -20,7 +20,3 @@ Each folder represents a specific topic or set of problems from the course. Insi
 - 🖥️ **Solutions**: My code implementations for the exercises.  
 ---
 
-## 🛠️ How to Use  
-1. Clone this repository to your local machine:  
-   ```bash
-   git clone https://github.com/MiroNikolov01/CSharp-Advanced-SoftUni-Course.git
