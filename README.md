@@ -1,4 +1,4 @@
-# 🚀 **C# Advanced - Homework Assignments**
+#  **C# Advanced - Homework Assignments**
 
 Welcome to my repository for the **Advanced C# Module** at SoftUni! This repository contains my solutions to various problems and exercises from the course. Below is a summary of the topics covered and how to navigate the repository.  
 
